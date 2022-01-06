@@ -88,5 +88,15 @@ flutter:
       fonts:
         - asset: fonts/Montserrat/Montserrat-Black.ttf
 
+    - family: NanumGothicBold
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-Bold.ttf
+    - family: NanumGothicExtraBold
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-ExtraBold.ttf
+    - family: NanumGothicRegular
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-Regular.ttf
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

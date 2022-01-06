@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'config/palette.dart';
 
 class JoinPage extends StatefulWidget {
@@ -12,7 +13,6 @@ class _JoinPageState extends State<JoinPage> {
 
   @override
   Widget build(BuildContext context) {
-    final double statusBarHeight = MediaQuery.of(context).padding.top;
 
     return Scaffold(
       appBar: AppBar(
@@ -20,6 +20,14 @@ class _JoinPageState extends State<JoinPage> {
         elevation: 0.0,
         iconTheme: const IconThemeData(
           color: Palette.themeColor1,
+        ),
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios,
+          ),
+          onPressed: () {
+            Get.back();
+          },
         ),
       ),
       body: Container(
@@ -79,36 +87,54 @@ class _JoinPageState extends State<JoinPage> {
                         fillColor: Colors.white.withOpacity(0.7),
                         enabledBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
+                            width: 2.0,
                             color: Palette.deactiveColor,
                           ),
                         ),
                         focusedBorder: const OutlineInputBorder(
                           borderSide: BorderSide(
+                            width: 2.0,
                             color: Palette.themeColor1,
                           ),
                         ),
                         hintText: 'PIN',
                         hintStyle: const TextStyle(
                           fontSize: 20.0,
+                          fontFamily: 'MontserratRegular',
                           color: Palette.deactiveColor,
                         ),
                         contentPadding: const EdgeInsets.all(15.0),
                       ),
                       style: const TextStyle(
-                          fontSize: 20.0,
-                          color: Palette.themeColor1,
+                        fontSize: 20.0,
+                        fontFamily: 'MontserratRegular',
+                        color: Palette.themeColor1,
                       ),
                     ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {},
-                  child: const Icon(
-                    Icons.arrow_forward,
-                  ),
-                  style: TextButton.styleFrom(
-                    shape: CircleBorder(),
-                    backgroundColor: Palette.themeColor1,
+                const SizedBox(
+                  width: 20,
+                ),
+                Container(
+                  width: 50.0,
+                  height: 50.0,
+                  child: OutlinedButton(
+                    onPressed: () {},
+                    child: const Icon(
+                      Icons.arrow_forward_ios,
+                      color: Palette.themeColor1,
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(
+                        color: Palette.themeColor1,
+                        style: BorderStyle.solid,
+                        width: 2.0,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
+                      ),
+                    ),
                   ),
                 ),
               ],

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 
 import 'config/palette.dart';
 import 'join_page.dart';
+import 'create_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -57,24 +58,45 @@ class _MainPageState extends State<MainPage> {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 30.0,
+            ),
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
                   width: 200.0,
+                  height: 50.0,
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(const CreatePage());
+                    },
                     child: const Text(
                       'create',
                       style: TextStyle(
                         color: Palette.themeColor2,
+                        fontFamily: 'MontserratRegular',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(
+                        color: Palette.themeColor2,
+                        style: BorderStyle.solid,
+                        width: 2.0,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
                       ),
                     ),
                   ),
                 ),
-                const SizedBox(width: 30),
+                const SizedBox(
+                    width: 30,
+                ),
                 Container(
                   width: 200.0,
+                  height: 50.0,
                   child: OutlinedButton(
                     onPressed: () {
                       Get.to(const JoinPage());
@@ -83,6 +105,18 @@ class _MainPageState extends State<MainPage> {
                       'join',
                       style: TextStyle(
                         color: Palette.themeColor1,
+                        fontFamily: 'MontserratRegular',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(
+                        color: Palette.themeColor1,
+                        style: BorderStyle.solid,
+                        width: 2.0,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
                       ),
                     ),
                   ),
