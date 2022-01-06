@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  get: ^4.6.1
 
 dev_dependencies:
   flutter_test:
@@ -86,6 +87,16 @@ flutter:
     - family: MontserratBlack
       fonts:
         - asset: fonts/Montserrat/Montserrat-Black.ttf
+
+    - family: NanumGothicBold
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-Bold.ttf
+    - family: NanumGothicExtraBold
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-ExtraBold.ttf
+    - family: NanumGothicRegular
+      fonts:
+        - asset: fonts/Nanum_Gothic/NanumGothic-Regular.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
