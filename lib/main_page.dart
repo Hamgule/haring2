@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import 'config/palette.dart';
+import 'join_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -26,7 +28,7 @@ class _MainPageState extends State<MainPage> {
                   style: TextStyle(
                     color: Palette.themeColor2,
                     fontFamily: 'MontserratBold',
-                    fontSize: 120.0,
+                    fontSize: 150.0,
                     fontWeight: FontWeight.bold,
                     // shadows: [
                     //   Shadow(
@@ -42,7 +44,7 @@ class _MainPageState extends State<MainPage> {
                   style: TextStyle(
                     color: Palette.themeColor1,
                     fontFamily: 'MontserratBold',
-                    fontSize: 120.0,
+                    fontSize: 150.0,
                     fontWeight: FontWeight.bold,
                     // shadows: [
                     //   Shadow(
@@ -58,23 +60,31 @@ class _MainPageState extends State<MainPage> {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                OutlinedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'create',
-                    style: TextStyle(
-                      color: Colors.black,
+                Container(
+                  width: 200.0,
+                  child: OutlinedButton(
+                    onPressed: () {},
+                    child: const Text(
+                      'create',
+                      style: TextStyle(
+                        color: Palette.themeColor2,
+                      ),
                     ),
                   ),
-                  style: OutlinedButton.styleFrom(
-
-                  ),
                 ),
-                SizedBox(width: 50),
-                OutlinedButton(
-                  onPressed: () {},
-                  child: Text(
-                      'join'
+                const SizedBox(width: 30),
+                Container(
+                  width: 200.0,
+                  child: OutlinedButton(
+                    onPressed: () {
+                      Get.to(const JoinPage());
+                    },
+                    child: const Text(
+                      'join',
+                      style: TextStyle(
+                        color: Palette.themeColor1,
+                      ),
+                    ),
                   ),
                 ),
               ],
