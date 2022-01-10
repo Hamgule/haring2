@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "935196261214",
+    "project_id": "haring2-f7e3e",
+    "storage_bucket": "haring2-f7e3e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935196261214:android:55c56d7d8258d0da00adcf",
+        "android_client_info": {
+          "package_name": "com.example.haring2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935196261214-9pesdp6b2nes207igi2g4ghhrj1tkoqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.haring2",
+            "certificate_hash": "db1fdb8b7b6323f977ede8220ea64d6d3b2c9c27"
+          }
+        },
+        {
+          "client_id": "935196261214-2ic1ogfim2c30tho9gdg1ve99cc19jpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDecyUP5nXtBqHeTwWSA3HqzrC4xyEcPfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935196261214-2ic1ogfim2c30tho9gdg1ve99cc19jpn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
