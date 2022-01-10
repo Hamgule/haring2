@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'config/palette.dart';
+import 'package:haring2/config/palette.dart';
+import 'leader_page.dart';
+
 
 class CreatePage extends StatefulWidget {
   const CreatePage({Key? key}) : super(key: key);
@@ -52,7 +54,9 @@ class _CreatePageState extends State<CreatePage> {
               width: 300.0,
               height: 300.0,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const LeaderPage());
+                },
                 child: const Icon(
                   Icons.add,
                   size: 100.0,

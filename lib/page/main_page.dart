@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'config/palette.dart';
+import '../config/palette.dart';
 import 'join_page.dart';
 import 'create_page.dart';
 

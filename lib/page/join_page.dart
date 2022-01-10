@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'config/palette.dart';
+import '../config/palette.dart';
+import 'user_page.dart';
 
 class JoinPage extends StatefulWidget {
   const JoinPage({Key? key}) : super(key: key);
@@ -120,7 +121,9 @@ class _JoinPageState extends State<JoinPage> {
                   width: 50.0,
                   height: 50.0,
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(const UserPage());
+                    },
                     child: const Icon(
                       Icons.arrow_forward_ios,
                       color: Palette.themeColor1,
