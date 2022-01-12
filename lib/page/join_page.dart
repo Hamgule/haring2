@@ -122,7 +122,7 @@ class _JoinPageState extends State<JoinPage> {
                   height: 50.0,
                   child: OutlinedButton(
                     onPressed: () {
-                      Get.to(const UserPage());
+                      Get.to(() => const UserPage());
                     },
                     child: const Icon(
                       Icons.arrow_forward_ios,

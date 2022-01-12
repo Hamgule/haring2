@@ -69,7 +69,7 @@ class _MainPageState extends State<MainPage> {
                   height: 50.0,
                   child: OutlinedButton(
                     onPressed: () {
-                      Get.to(const CreatePage());
+                      Get.to(() => const CreatePage());
                     },
                     child: const Text(
                       'create',
@@ -99,7 +99,7 @@ class _MainPageState extends State<MainPage> {
                   height: 50.0,
                   child: OutlinedButton(
                     onPressed: () {
-                      Get.to(const JoinPage());
+                      Get.to(() => const JoinPage());
                     },
                     child: const Text(
                       'join',

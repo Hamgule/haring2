@@ -55,7 +55,7 @@ class _CreatePageState extends State<CreatePage> {
               height: 300.0,
               child: OutlinedButton(
                 onPressed: () {
-                  Get.to(const LeaderPage());
+                  Get.to(() => LeaderPage());
                 },
                 child: const Icon(
                   Icons.add,
